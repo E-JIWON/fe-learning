@@ -1,12 +1,17 @@
-import { useEffect, useState } from "react";
-import UseEffect from "./UseEffect";
-import CleanUp from "./CleanUp";
+import React from "react";
+// import { useEffect, useState } from "react";
+// import UseEffect from "./UseEffect";
+// import CleanUp from "./CleanUp";
+// import TodoList from "./TodoList";
+import CoinTracker from "./CoinTracker";
 
 function App() {
   return (
     <div>
       {/* <UseEffect /> */}
-      <CleanUp />
+      {/* <CleanUp /> */}
+      {/* <TodoList /> */}
+      <CoinTracker />
     </div>
   );
 }
