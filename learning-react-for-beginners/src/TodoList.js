@@ -46,17 +46,18 @@ const TodoList = () => {
         </button>
       </form>
 
-      {toDoList.length > 0 &&
-        toDoList.map((item, idx) => {
-          return (
-            <ul>
+      {toDoList.length > 0 && (
+        <ul>
+          {toDoList.map((item, idx) => {
+            return (
               <li key={item + idx}>
                 <span>{idx} </span>
                 <span>{item}</span>
               </li>
-            </ul>
-          );
-        })}
+            );
+          })}
+        </ul>
+      )}
     </section>
   );
 };
