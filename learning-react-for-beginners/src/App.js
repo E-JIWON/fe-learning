@@ -1,18 +1,19 @@
-import React from "react";
-// import { useEffect, useState } from "react";
-// import UseEffect from "./UseEffect";
-// import CleanUp from "./CleanUp";
-// import TodoList from "./TodoList";
-import CoinTracker from "./CoinTracker";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
 function App() {
   return (
-    <div>
-      {/* <UseEffect /> */}
-      {/* <CleanUp /> */}
-      {/* <TodoList /> */}
-      <CoinTracker />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/movie/:id">
+          <Detail />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
